@@ -1,0 +1,327 @@
+.dark_area{
+    background-color: rgb(177,159,158, 0.2);
+}
+                                /* основной сектор пригласительного */
+.main_area_title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 70vh 20vh;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/b017596da740ab0e187fa4d061954995.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #cac3c6;
+}
+
+.overlay {
+    position: absolute;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.6);
+  }
+
+.over{
+    z-index: 2;
+}
+
+.main_title{
+    display: grid;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-family: "Scriptorama", sans-serif;
+    font-weight: 400;
+    font-size: 86px;
+    line-height: 1.5em;
+}
+
+.wedding{
+    grid-column-start: 2;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    align-self: flex-end;
+}
+
+.date{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.date_day{
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.border{
+    border-top: #eee2dc solid 1px;
+    border-bottom: #eee2dc solid 1px;
+}
+
+.bride{
+    text-align: right;
+}
+
+.groom{
+    text-align: left;
+}
+
+.and{
+    text-align: center;
+}
+
+                                /* вторая секция - описание */
+
+.about{
+    text-align: center;
+    padding: 40px;
+    color: #4f4a41;
+}
+
+.about_text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.icons{
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    .icons{
+        width: 80px;
+        height: 80px;
+    }
+  }
+
+.about_celebrate {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+  }
+  
+  @media (max-width: 600px) {
+    .about_celebrate {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .about_celebrate_title{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    padding: 25px;
+    letter-spacing: 2px;
+}
+
+.about_celebrate_text{
+    padding: 25px;
+}
+
+                                                            /* дресс-код */
+
+.colors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+@media (max-width: 600px) {
+    .colors {
+        gap: 0.5em;
+    }
+  }
+
+.dress-code{
+    padding: 40px;
+}
+
+.dress-code_title{
+    display: flex;
+    color: #4f4a41;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+}   
+
+.dress-code_text{
+    text-align: center;
+    padding: 40px;
+    color: #4f4a41;
+}
+
+.color{
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media (max-width: 600px) {
+    .color {
+        width: 50px;
+        height: 50px;
+    }
+  }
+
+.color:hover{
+    scale: 120%;
+}
+
+#blue{
+    background-color: #566F5F;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#green{
+    background-color: #D1C1B4;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#yellow{
+    background-color: #DEB28D;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#turquoise{
+    background-color: #AF8678;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+#beige{
+    background-color:#7E9C8D;
+    border: rgba(246, 211, 121, 1) solid 2px;
+}
+
+.colors{
+    padding: 20px;
+}
+
+
+                                                            /* timer area */
+
+
+.date_time{
+    padding: 40px;
+}
+
+@media (max-width: 600px) {
+    .date_time{
+        padding: 20px 0 20px 0;
+    }
+  }  
+
+.date_time_text{
+    display: flex;
+    color: #4f4a41;
+    justify-content: center;
+    align-self: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    padding-bottom: 25px;
+} 
+                                                       
+
+.timer{
+    margin: 25px 25px 0 25px;
+}
+
+.details{
+    padding: 40px;
+}
+
+.details_title{
+    display: flex;
+    color: #4f4a41;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.details_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    text-align: center;
+    padding: 40px;
+    gap: 1.5em;
+}
+
+@media (max-width: 600px) {
+    .details_list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .details_text{
+        width: 100%;
+    }
+  }
+
+.details_text{
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer_text{
+    color: #4f4a41;
+}
+
+.infinity {
+    /* Modify size here: */
+    --size: 40px;
+    --thickness: calc(var(--size) * 0.1);
+  
+    position: relative;
+    width: var(--size);
+    height: calc(var(--size) * 0.47);
+    box-sizing: content-box;
+  }
+  .infinity:before,
+  .infinity:after {
+    content: "";
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(var(--size) * 0.28);
+    height: calc(var(--size) * 0.28);
+    border: var(--thickness) solid #4f4a41;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+  }
+  .infinity:after {
+    left: calc(44% + var(--thickness));
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+  }
