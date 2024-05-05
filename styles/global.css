@@ -13,8 +13,20 @@ body {
   text-decoration: none;
   line-height: 1.5em;
   background-color: #eee2dc;
-  
 }
+
+
+/* скрытие скролла 
+body::-webkit-scrollbar {
+  display: none;
+}
+ 
+ Скрываем scrollbar для IE, Edge и Firefox 
+.body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+*/
 
 h1,
 h2,

@@ -5,7 +5,7 @@
 .main_area_title{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 10vh 70vh 20vh;
+    grid-template-rows: 15svh 65svh 20svh;
     align-items: center;
     text-align: center;
     background-image: url(../images/b017596da740ab0e187fa4d061954995.jpg);
@@ -29,6 +29,7 @@
     z-index: 2;
 }
 
+
 .main_title{
     display: grid;
     grid-column-start: 2;
@@ -38,6 +39,16 @@
     font-size: 86px;
     line-height: 1.5em;
 }
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .main_title {
+        line-height: 0.9em;
+    }
+    .main_area_title{
+        grid-template-columns: 20svw 60svw 20svw;
+        grid-template-rows: 10svh 70svh 20svh;
+    }
+  }
 
 .wedding{
     grid-column-start: 2;
@@ -192,23 +203,23 @@
 }
 
 #blue{
-    background-color: #566F5F;
+    background-color: #e3dbd3;
     border: rgba(246, 211, 121, 1) solid 2px;
 }
 #green{
-    background-color: #D1C1B4;
+    background-color: #9fada5;
     border: rgba(246, 211, 121, 1) solid 2px;
 }
 #yellow{
-    background-color: #DEB28D;
+    background-color: #44576d;
     border: rgba(246, 211, 121, 1) solid 2px;
 }
 #turquoise{
-    background-color: #AF8678;
+    background-color: #593a43;
     border: rgba(246, 211, 121, 1) solid 2px;
 }
 #beige{
-    background-color:#7E9C8D;
+    background-color:#383a3a;
     border: rgba(246, 211, 121, 1) solid 2px;
 }
 
